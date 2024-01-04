@@ -1,0 +1,6 @@
+<h1>Inside App components</h1>
+<app-child [parentData] = "parentMessage" (childData)="childMessageRecived = $event"></app-child>
+<button (click)="SendToChild()">ParentToChild</button>
+
+<h1>{{childMessageRecived}}</h1>
+<router-outlet></router-outlet>
